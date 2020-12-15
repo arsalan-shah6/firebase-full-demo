@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Insert Data"
+        android:textSize="30sp"
+        android:textColor="#229954"
+        android:id="@+id/insertText"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Sno"
+        android:inputType="number"
+        android:layout_below="@+id/insertText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/sno"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sno"
+        android:hint="Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/name"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Subject"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="10dp"
+        android:id="@+id/subject"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Insert"
+        android:id="@+id/insert"
+        android:layout_below="@id/subject"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

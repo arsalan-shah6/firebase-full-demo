@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.firebasefulldemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FireBaseFullDemo">
+        <activity android:name=".RVActivity"
+            android:theme="@style/Theme.FireBaseFullDemo2"
+            ></activity>
+        <activity
+            android:name=".RetrieveDataActivity"
+             />
+        <activity android:name=".DashBoardActivity" />
+        <activity
+            android:name=".ManageOtpActivity"
+            android:theme="@style/Theme.FireBaseFullDemo2" />
+        <activity
+            android:name=".PhoneAuthenticationActivity"
+            android:theme="@style/Theme.FireBaseFullDemo2" />
+        <activity
+            android:name=".SignUpWithImageActivity"
+            android:theme="@style/Theme.FireBaseFullDemo2" />
+        <activity
+            android:name=".ImageUploadActivity"
+            android:theme="@style/Theme.FireBaseFullDemo2" />
+        <activity
+            android:name=".InsertActivity"
+            android:theme="@style/Theme.FireBaseFullDemo2" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.FireBaseFullDemo2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
